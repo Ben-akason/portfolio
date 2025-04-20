@@ -1,7 +1,11 @@
-import Card from "@/components/card";
+import Card from "@/components/projectCard";
 import NavWheel from "../components/navWheel";
 import Skills from "@/components/skills";
 import About from "@/components/about";
+import ProjectExperience from "@/components/projectExperience";
+import WorkExperience from "@/components/workExperience";
+import EducationHobbies from "@/components/educationHobbies";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -30,11 +34,15 @@ export default function Home() {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center h-screen">
-        <div className="grid grid-cols-5 w-4/5 h-2/3 gap-x-4">
+        <div className="grid grid-cols-5 w-5/6 gap-x-4">
           <About></About>
           <Skills></Skills>
         </div>
       </div>
+      <ProjectExperience></ProjectExperience>
+      <WorkExperience></WorkExperience>
+      <EducationHobbies></EducationHobbies>
+      <Footer></Footer>
     </>
   );
 }
