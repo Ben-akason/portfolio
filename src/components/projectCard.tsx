@@ -19,7 +19,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div
-      className={`rounded-xl border-solid border-black border-2 col-span-${colSpan} row-span-${rowSpan} relative`}
+      className={`rounded-xl border-solid border-black border-2 col-span-${colSpan} row-span-2 relative overflow-hidden`}
     >
       <div className="flex flex-row gap-x-4 items-center">
         <Image
@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="flex flex-row justify-between w-full absolute bottom-5">
         <div className="flex flex-col">
           {languages.map((pair, index) => (
-            <div key={index} className="flex flex-row px-2 py-1 mb-2">
+            <div key={index} className="flex flex-row px-2 mb-2">
               <div
                 style={{ backgroundColor: pair[0] }}
                 className="rounded-full mx-2 w-6 h-6"
