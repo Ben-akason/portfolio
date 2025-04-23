@@ -59,7 +59,7 @@ const WorkCard: React.FC<WorkCardProps> = ({
           />
         </svg>
 
-        <div className="px-4 py-1">{dateString}</div>
+        <div className="px-4 py-2">{dateString}</div>
       </div>
       <div className="px-4 py-1 text-ellipsis h-1/2 lg:text-sm md:text-xs sm:text-xs xs:text-xs">
         {description}
